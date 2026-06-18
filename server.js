@@ -4,7 +4,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 
 const httpServer =  http.createServer(async function (req,res) {
-    const indexFile = await fs.readFile(path.resolve('./index.html'),'utf-8')
+    const indexFile = await fs.readFile('./index.html','utf-8')
     res.setHeader('Content-Type','text/html')
     return res.end(indexFile)
 })
