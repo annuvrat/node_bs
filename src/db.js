@@ -16,3 +16,5 @@ db.run(`CREATE TABLE IF NOT EXISTS users(
     if (err)console.log(err);
     else console.log('table created');
 })
+
+/
